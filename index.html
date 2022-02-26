@@ -1,89 +1,209 @@
----
-layout: default
-title: UA Cyber Help
----
-<header>
-	<div class="container">
-		<div class="column">
-			<div>
-				<h1 class="editable">UA Cyber Help</h1>
-				<p class="editable">We are uniting IT and cyber security companies to bring resources to those affected by the war in Ukraine.</p>
-				<div class="button">
-					<a href="mailto:uacyberhelp@protonmail.com">Request Free Cyber Support</a>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<img src="{{ site.baseurl }}/images/uacyberhelp.png" alt="UA Cyber Help">
-		</div>
-	</div>
-</header>
-
-<div class="container">
-	<h2 class="editable" style="text-align: center;">How do we help?</h2>
-
-	<ul class="thirds">
-		<li>
-			<div class="image">{% include icons/site.html icon="population" %}</div>
-			<h3 class="editable">DDoS protection</h3>
-			<p class="editable">We help mitigate DDoS attacks when your website is under attack</p>
-		</li>
-
-		<li>
-			<div class="image">{% include icons/site.html icon="economy" %}</div>
-			<h3 class="editable">Website upkeep</h3>
-			<p class="editable">We help scale the infrastucture in case of increased traffic</p>
-		</li>
-
-		<li>
-			<div class="image">{% include icons/site.html icon="conditions" %}</div>
-			<h3 class="editable">Technical support</h3>
-			<p class="editable">We help with technical issues that may cause service disruptions</p>
-		</li>
-	</ul>
-</div>
-<!--
-<div class="container">
-	<h2 class="editable" style="text-align: center;">Who we are?</h2>
-	<p>needs list of companies</p>
-</div>
--->
-
-<div class="container">
-	<div class="columns">
-		<div>
-			<img src="{{ site.baseurl }}/images/donate.png" alt="Donate">
-		</div>
-		<div>
-			<h2 class="editable">Consider donating</h2>
-			<p class="editable">You can do your part! Consider donating to any of the following organisations to help the people affected by the war.</p>
-		</div>
-	</div>
-</div>
-
-<div class="container">
-	<h2 class="editable" style="text-align: center;">Where to donate?</h2>
-	<iframe src="https://embednotion.com/embed/i0fchczi"></iframe>  <style>  iframe { width: 100%; height: 2000px; border: 0px solid #ccc; border-radius: 10px; padding: none; }  </style>
-</div>
-<!--
-<div class="darker">
-	<div class="container">
-		<h2 class="editable">Updates</h2>
-		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
-		<div class="posts">
-			{% for post in site.posts %}
-				<div class="post">
-					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
-					<div class="post-content">
-						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-						<h3>{{ post.title }}</h3>
-
-						{{ post.content }}
-						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
-					</div>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
-</div>
--->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="description" content="IT and cyber security assistance for those affected by the war in Ukraine"/>
+        <meta name="author" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:title" content="UA Cyber Help"/>
+        <meta property="og:description" content="IT and cyber security assistance for those affected by the war in Ukraine"/>
+        <meta property="og:image" content="https://ua.nowalepszastrona.pl/img/og_image.jpg"/>
+        <title>UA Cyber Help</title>
+        <link href="css/style.css" rel="stylesheet"/>
+        <script src="js/jquery.min.js"></script>
+    </head>
+    <body>
+        <section class="main-wrapper">
+            <div class="hero-section">
+                <div class="hero-inner">
+                    <h2 class="hero-title">UA Cyber Help</h2>
+                    <h1 class="hero-h1">IT and cyber security assistance for those affected by the war in Ukraine</h1><a href="mailto:uacyberhelp@protonmail.com" class="button">Request free cyber support</a>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <h2 class="h2">How we can help</h2>
+                <p class="mb-xl text">In the light of what is happening in Ukraine at the moment, leaving politics aside, people are suffering. There are numerous NGOs formed in Ukraine that are collecting donations that are targeted towards people who have been affected by the ongoing war. Unfortunately, similarly to UA government websites and IT infrastructure being attacked &ndash; so are NGO websites.</p>
+                <div class="features-grid mb-xl">
+                    <div class="features-col">
+                        <img src="img/feature1.png" class="features-col__img"/>
+                        <h3 class="features-col__title">DDoS protection</h3>
+                        <p class="features-col__text">We help mitigate DDoS attacks when your website becomes under attack</p>
+                    </div>
+                    <div class="features-col">
+                        <img src="img/feature2.png" class="features-col__img"/>
+                        <h3 class="features-col__title">Website upkeep</h3>
+                        <p class="features-col__text">We help scale the infrastucture to better handle increased traffic</p>
+                    </div>
+                    <div class="features-col">
+                        <img src="img/feature3.png" class="features-col__img"/>
+                        <h3 class="features-col__title">Technical support</h3>
+                        <p class="features-col__text">We help with technical issues that may result in service disruptions</p>
+                    </div>
+                </div>
+                <div class="cta mb-xl">
+                    <p class="cta__text">Let us know with a brief description of your problem and we&rsquo;ll get someone to assist you.</p>
+                    <a href="mailto:uacyberhelp@protonmail.com" class="cta__button">Request free cyber support</a>
+                </div>
+                <h2 class="h2">How you can help</h2>
+                <p class="mb-xl text">Here are all the NGOs and initiatives that support the civilians and people who are affected by the war. We&rsquo;re uniting IT and cyber security companies to bring together resources that can be given to those in need so they can continue accepting donations and share critical information that supports the people in the crisis zone.</p>
+                <div class="donate-div">
+                    <h3 class="donate__title">Save Life</h3>
+                    <p class="donate__text">This NGO crowdfunds non-lethal military equipment, such as thermal vision scopes &amp; supplies it to the Donbas front lines. It also provides training for Ukrainian soldiers, as well as researching troops&rsquo; needs and social reintegration of veterans.</p><a href="https://savelife.in.ua/donate/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Donbas SOS</h3>
+                    <p class="donate__text">This organization helps those who live in the Donbas war zone, those who relocated to other parts of Ukraine, and freed prisoners of war. It offers legal support, accommodation assistance, and psychological aid among other things.</p><a href="https://www.donbasssos.org/en/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Crimea SOS</h3>
+                    <p class="donate__text">This organization has been helping internally displaced people from Crimea since Russia occupied the peninsula in 2014. It documents Russian authorities&apos; repressions against Crimeans and advocates for the end of the occupation.</p><a href="https://krymsos.com/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Hospitallers</h3>
+                    <p class="donate__text">This is a medical battalion that unites volunteer paramedics and doctors to save the lives of soldiers on the frontline. They crowdfund their vehicle repairs, fuel, and medical equipment.</p><a href="https://facebook.com/hospitallers/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Tabletochki</h3>
+                    <p class="donate__text">This foundation has been supporting children with cancer for 10 years. They procure medicines, equipment, and arrange overseas treatment, among other things.</p><a href="https://tabletochki.org/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">ChildrenWeWillMakeIt</h3>
+                    <p class="donate__text">This movement grew out of a campaign that raised $2 million to get the world&apos;s most expensive medicine for a Ukrainian boy with spinal muscular atrophy. It now fundraises for the treatment of other Ukrainian children with SMA.</p><a href="https://vstygnemo.org.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Ruka ob Ruku</h3>
+                    <p class="donate__text">This is a running club for children with disabilities. The initiative gives children an opportunity to train and take part in races together with their parents and volunteers.</p><a href="https://ruka-ob-ruku.com.ua/en/index.html" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Happy Old</h3>
+                    <p class="donate__text">This charity provides older people across Ukraine with groceries and medicine, holds educational, entertainment, and sports events, as well as helps with employment. They even created a modeling agency for the elderly.</p><a href="https://happyold.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Let&apos;s Help</h3>
+                    <p class="donate__text">This charity cares for older people living alone and helps state retirement homes. They also advocate for better treatment of older people by the state, including providing people aged 60+ with easy access to education.</p><a href="https://letshelp.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Starenki</h3>
+                    <p class="donate__text">It&rsquo;s a charitable initiative devoted to issues of old age in Ukraine. They help lonely seniors by providing them with groceries and hygiene products.</p><a href="https://starenki.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Women Perspectives</h3>
+                    <p class="donate__text">This organization has been helping women who have faced domestic violence, discrimination in the labor market, and other issues. The NGO works with local and state authorities to promote pro-equality gender policies in Ukraine.</p><a href="http://women.lviv.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Marsh Zhinok (Women&rsquo;s March)</h3>
+                    <p class="donate__text">Every year, on March 8, this initiative holds a rally promoting gender equality and the protection of women from gender-based violence. Currently, the organization is petitioning for Ukraine to adopt the Istanbul Convention.</p><a href="https://marsh-zhinok.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Blood Agents</h3>
+                    <p class="donate__text">It is an NGO that promotes regular, conscious and gratuitous blood donations. They have encouraged people to donate blood over 5,000 times over the past six years.</p><a href="https://t.co/YeSSktWhJK" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Donor UA</h3>
+                    <p class="donate__text">It is an automated system for recruiting and managing blood donors, designed to promote the donor movement in Ukraine. You can help by signing up and donating blood or by supporting the project with money donation.</p><a href="https://www.donor.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Sirius</h3>
+                    <p class="donate__text">Is the largest shelter for stray animals in Ukraine established in 2000. Its capacity is over 3,000 animals. The institution crowdfunds for animal feed, veterinary drugs, construction and repair of enclosures, and other needs.</p><a href="https://dogcat.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Happy Paw</h3>
+                    <p class="donate__text">Is a charity dedicated to solving the problems of homeless animals in Ukraine. The charity helps owners find lost animals, sterilizes domestic animals of people in need &amp; holds lectures on humane treatment of homeless animals for schoolchildren.</p><a href="https://happypaw.ua/ua" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">UAnimals</h3>
+                    <p class="donate__text">Is a movement for protecting animals from exploitation &amp; abuse. The organization managed to achieve a ban on animal circuses &amp; persuaded many designers participating in Ukrainian Fashion Week to abandon natural fur.</p><a href="https://www.facebook.com/UAnimals.official/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Ukraine Without Waste</h3>
+                    <p class="donate__text">It is a Ukrainian non-profit promoting the practice of sorting household waste. They educate companies on how to go green at their offices, and hold lectures for the wider public.</p><a href="https://nowaste.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Laska</h3>
+                    <p class="donate__text">It&rsquo;s a chain of two charity stores in Kyiv that promote conscious shopping. They accept donated clothes, resell 15% of them, and send the rest to orphanages, homes for the elderly and centers for people with disabilities.</p><a href="https://laskastore.com/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Help the homeless</h3>
+                    <p class="donate__text">This initiative supports homeless people &amp; the elderly in need, by providing them with free meals, medicine, hygiene products, clothes &amp; shoes. Launched by a group of volunteers in 2016, the organization has been relying on crowdfunding.</p><a href="https://m.facebook.com/pomogi.bezdomnomu/?__nodl&ref=external%3At.co&_rdr" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Suka Zhizn</h3>
+                    <p class="donate__text">This organization grew big from a 2017 Instagram account launched to tell stories of homeless people. Now volunteers provide various support to the homeless: employment, sorting out documents, searching for relatives &amp; legal counseling.</p><a href="https://t.co/oBWjKmjs0a" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Slidstvo</h3>
+                    <p class="donate__text">Is an independent agency launched in 2012 that produces award-winning documentaries exposing corruption. They have investigated mismanagement of prisons, fraud, money laundering at PrivatBank &amp; the assassination of journalist Sheremet.</p><a href="https://t.co/nbG0czw6Nk" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">UKRPravda News</h3>
+                    <p class="donate__text">Founded in 2000 by Gongadze, a prominent journalist who was killed the same year, this publication is among the most influential in Ukraine. The reporters break political scoops and unmask officials who abuse their power.</p><a href="https://www.pravda.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Zaborona Media</h3>
+                    <p class="donate__text">This is an independent media outlet founded by journalists. They investigate topics such as violations of Ukrainian workers&rsquo; rights in the Middle East, arms trafficking, and corruption in the construction sector.</p><a href="https://zaborona.com/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Parkhomivka Museum</h3>
+                    <p class="donate__text">The museum, located in a small village in eastern Kharkiv Oblast, is an 18th-century villa that offers a permanent collection of exhibits by artists as iconic as Picasso, Malevich &amp; Manet. You can support it by coming &amp; buying a ticket.</p><a href="http://museumparhomovka.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Save Kyiv Modernism</h3>
+                    <p class="donate__text">Is a movement that unites architects, designers and activists who advocate for the protection of the remarkable Soviet modernist structures across Ukraine.</p><a href="https://t.co/QHfs9rYB3T" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">FrankivskToCareAbout</h3>
+                    <p class="donate__text">Is a movement for the preservation of architectural heritage in the western city of Ivano-Frankivsk. Founded in 2016, the initiative renovates old wooden doors of the city&apos;s ancient buildings.</p><a href="https://www.facebook.com/groups/342879319403810/?ref=share" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Svoyi</h3>
+                    <p class="donate__text">Svoyi gives free oxygen concentrators to people who contracted COVID &amp; can&rsquo;t be hospitalized due to personal circumstances or when hospitals are overflowing. It also helps those discharged too early in favour of patients in more serious conditions.</p><a href="http://svoyi.com.ua/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Monsters, Inc.</h3>
+                    <p class="donate__text">This organization is based in Odesa and provides emergency medical aid to people living in the region. They also help COVID hospitals, procuring medicines and equipment.</p><a href="http://monstrov.org/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">The Kyiv Independent</h3>
+                    <p class="donate__text">The Kyiv Independent was launched because Ukraine needed on-the-ground English-language journalism of the highest quality and the community needed a news source they can trust.</p><a href="https://kyivindependent.com/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Revived Soldiers Ukraine</h3>
+                    <p class="donate__text">Revived Soldiers Ukraine is a non-profit organization dedicated to providing aid to the people of Ukraine in support of their fundamental human rights and medical rehabilitation of Ukrainian soldiers.</p><a href="https://www.rsukraine.org/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Sunflower of Peace</h3>
+                    <p class="donate__text">Sunflower of Peace has officially started a fundraiser to prepare first aid medical tactical backpacks for paramedics and doctors on the front lines.</p><a href="https://www.facebook.com/donate/507886070680475/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Army SOS</h3>
+                    <p class="donate__text">Army SOS Citizens Initiative coordinates people&apos;s efforts to help soldiers of Ukraine. We manage purchases of necessary ammunition, shields, intercommunication and reconnaissance facilities, uniforms, and food supply. We deliver all goods directly to the unit`s emplacement and pass them right to the hands of our warriors.</p><a href="https://armysos.com.ua/en/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Razom for Ukraine</h3>
+                    <p class="donate__text">Razom, Inc. is a 501c3 non-profit organization supporting the people of Ukraine in their pursuit of a democratic society with dignity, justice, and human and civil rights for all. Razom coordinates groups of volunteers and fundraising efforts to build a prosperous Ukraine project by project.</p><a href="https://www.facebook.com/RazomForUkraine/fundraisers" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">Charitable Foundation Voices of Children</h3>
+                    <p class="donate__text">Charitable Foundation Voices of Children helps children affected by the war in eastern Ukraine. Thanks to you, we provide psychological and psychosocial support to children. It helps them overcome the consequences of armed conflict and develop.</p><a href="https://voices.org.ua/en/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <div class="donate-div">
+                    <h3 class="donate__title">United Help Ukraine</h3>
+                    <p class="donate__text">United Help Ukraine, Inc. is a charitable organization receiving and distributing donations, food and medical supplies to Ukrainian IDPs, people of Ukraine affected by Russia&rsquo;s invasion into Eastern Ukraine and annexation of Crimea.</p><a href="https://unitedhelpukraine.org/" target="_blank" class="donate__button">Donate</a>
+                </div>
+                <p class="text">Charities and descriptions source:&nbsp;<a href="https://www.reddit.com/r/ukraine/comments/s6g5un/want_to_support_ukraine_heres_a_list_of_charities/" target="_blank">Reddit thread</a></p>
+            </div>
+            <div class="logos-section">
+                <h2 class="h2 mb-xl">Companies contributing resources</h2>
+                <div class="logo-wrapper mb-xl">
+                    <img src="img/patchstack-logo.svg" class="logo-img"/>
+                </div>
+                <div class="mb-xl slack-wrapper">
+                    <img src="img/slack.svg" class="slack-icon"/>
+                    <p class="slack-wrapper__text">Something missing? Want to contribute? <a href="https://join.slack.com/t/uacyberhelp/shared_invite/zt-144qyk207-r2BbNOsmd2WXuc9wXjhlJQ" target="_blank">Join us on Slack</a>.</p>
+                </div>
+                <img src="img/ukraine-flag-small.png" class="mb-xl"/>
+            </div>
+        </section>
+    </body>
+</html>
